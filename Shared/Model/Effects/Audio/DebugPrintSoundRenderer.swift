@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class DebugPrintSoundRenderer: SoundRenderer {
-    func prepare(file: String) {
+    func prepare(file: URL) {
         print("Loading file \(file)")
     }
 
@@ -25,6 +25,7 @@ class DebugPrintSoundRenderer: SoundRenderer {
     }
 
     @Published var isPlaying: Bool = false
+    var repeats: Bool = false
 
     func play() {
         print("Playing...")

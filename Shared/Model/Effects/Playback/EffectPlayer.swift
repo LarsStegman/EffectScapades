@@ -15,11 +15,20 @@ struct EffectStatus: Identifiable {
 }
 
 protocol EffectPlayerProtocol: ObservableObject {
-    var effects: [Effect] { get }
-    var status: [UUID: EffectStatus] { get }
+    func status(of effect: UUID) -> EffectStatus
 
     func play(effect id: UUID)
     func stop(effect id: UUID)
+}
+
+extension EffectPlayerProtocol {
+    func toggle(_ id: UUID) {
+        if self.status(of: id).isPlaying {
+            self.stop(effect: id)
+        } else {
+            self.play(effect: id)
+        }
+    }
 }
 
 class EffectPlayer<S: SoundRenderer>: EffectPlayerProtocol  {
@@ -27,23 +36,23 @@ class EffectPlayer<S: SoundRenderer>: EffectPlayerProtocol  {
     private var renderObservers = Set<AnyCancellable>()
     private let soundRendererConstructor: () -> S
 
-    @Published var effects: [Effect]
-    var status: [UUID: EffectStatus] {
-        return Dictionary(uniqueKeysWithValues: effects.compactMap { effect in
-            let renderer = soundRenderers[effect.id]
-            return (effect.id, EffectStatus(id: effect.id,
-                                            isPlaying: renderer?.isPlaying ?? false,
-                                            progress: renderer?.progress ?? 0.0))
-        })
+    let effectLibrary: AnyEffectLibrary
+
+    init(soundRendererConstructor: @escaping () -> S, effectLibrary: AnyEffectLibrary) {
+        self.soundRendererConstructor = soundRendererConstructor
+        self.effectLibrary = effectLibrary
     }
 
-    init(soundRendererConstructor: @escaping () -> S, effects: [Effect]) {
-        self.soundRendererConstructor = soundRendererConstructor
-        self.effects = effects
+    func status(of effect: UUID) -> EffectStatus {
+        if let renderer = self.soundRenderers[effect] {
+            return EffectStatus(id: effect, isPlaying: renderer.isPlaying, progress: renderer.progress)
+        } else {
+            return EffectStatus(id: effect, isPlaying: false, progress: 0.0)
+        }
     }
 
     func play(effect id: UUID) {
-        guard let effect = effects.first(where: { effect in effect.id == id }) else {
+        guard let effect = effectLibrary.effects[id] else {
             return
         }
 
@@ -72,17 +81,9 @@ extension EffectPlayer {
 }
 
 class AnyEffectPlayer: EffectPlayerProtocol {
-    private var _effectsGetter: () -> [Effect]
-    private var _statusGetter: () -> [UUID: EffectStatus]
+    private var _status: (UUID) -> EffectStatus
     private var _play: (UUID) -> Void
     private var _stop: (UUID) -> Void
-
-    var effects: [Effect] {
-        return _effectsGetter()
-    }
-    var status: [UUID: EffectStatus] {
-        return _statusGetter()
-    }
 
     private var _objectWillChange: ObservableObjectPublisher
     var objectWillChange: ObservableObjectPublisher {
@@ -90,11 +91,14 @@ class AnyEffectPlayer: EffectPlayerProtocol {
     }
 
     init<E: EffectPlayerProtocol>(_ effectPlayer: E) where E.ObjectWillChangePublisher: ObservableObjectPublisher {
-        _effectsGetter = { effectPlayer.effects }
-        _statusGetter = { effectPlayer.status }
+        _status = effectPlayer.status(of:)
         _play = effectPlayer.play
         _stop = effectPlayer.stop
         _objectWillChange = effectPlayer.objectWillChange
+    }
+
+    func status(of effect: UUID) -> EffectStatus {
+        _status(effect)
     }
 
     func play(effect id: UUID) {

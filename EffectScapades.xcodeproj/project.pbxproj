@@ -7,16 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4820ADFE25A264D80001CC53 /* EffectLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */; };
+		4820ADFF25A264D80001CC53 /* EffectLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */; };
+		4820AE0925A3A31A0001CC53 /* Color+lighten-darken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE0825A3A31A0001CC53 /* Color+lighten-darken.swift */; };
+		4820AE0A25A3A31A0001CC53 /* Color+lighten-darken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE0825A3A31A0001CC53 /* Color+lighten-darken.swift */; };
+		4820AE1525A4F3030001CC53 /* LogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE1425A4F3030001CC53 /* LogicController.swift */; };
+		4820AE1625A4F3030001CC53 /* LogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE1425A4F3030001CC53 /* LogicController.swift */; };
+		4820AE2425A4F6010001CC53 /* LiteralLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE2325A4F6010001CC53 /* LiteralLibrary.swift */; };
+		4820AE2525A4F6010001CC53 /* LiteralLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE2325A4F6010001CC53 /* LiteralLibrary.swift */; };
+		4820AE3025A4F6170001CC53 /* StoredLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE2F25A4F6170001CC53 /* StoredLibrary.swift */; };
+		4820AE3125A4F6170001CC53 /* StoredLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE2F25A4F6170001CC53 /* StoredLibrary.swift */; };
 		482777C325A12AF6006ADB49 /* fireball.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 489E458525A1235D006D297C /* fireball.m4a */; };
 		482777C825A12AF6006ADB49 /* fireball.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 489E458525A1235D006D297C /* fireball.m4a */; };
 		482777CE25A1CD5E006ADB49 /* RadialProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777CD25A1CD5E006ADB49 /* RadialProgressViewStyle.swift */; };
 		482777CF25A1CD5E006ADB49 /* RadialProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777CD25A1CD5E006ADB49 /* RadialProgressViewStyle.swift */; };
+		482777D925A21BBB006ADB49 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777D825A21BBB006ADB49 /* Library.swift */; };
+		482777DA25A21BBB006ADB49 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777D825A21BBB006ADB49 /* Library.swift */; };
+		482777E125A228F0006ADB49 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777E025A228F0006ADB49 /* Color+Codable.swift */; };
+		482777E225A228F0006ADB49 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777E025A228F0006ADB49 /* Color+Codable.swift */; };
+		482777E825A23419006ADB49 /* SoundSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777E725A23419006ADB49 /* SoundSource.swift */; };
+		482777E925A23419006ADB49 /* SoundSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777E725A23419006ADB49 /* SoundSource.swift */; };
+		482777F025A23C77006ADB49 /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777EF25A23C77006ADB49 /* FilesManager.swift */; };
+		482777F125A23C77006ADB49 /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777EF25A23C77006ADB49 /* FilesManager.swift */; };
 		4848DD33259F568500EE9B30 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD32259F568500EE9B30 /* Tests_iOS.swift */; };
 		4848DD3E259F568500EE9B30 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD3D259F568500EE9B30 /* Tests_macOS.swift */; };
 		4848DD40259F568500EE9B30 /* EffectScapadesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD17259F568300EE9B30 /* EffectScapadesApp.swift */; };
 		4848DD41259F568500EE9B30 /* EffectScapadesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD17259F568300EE9B30 /* EffectScapadesApp.swift */; };
-		4848DD42259F568500EE9B30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD18259F568300EE9B30 /* ContentView.swift */; };
-		4848DD43259F568500EE9B30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD18259F568300EE9B30 /* ContentView.swift */; };
+		4848DD42259F568500EE9B30 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD18259F568300EE9B30 /* SceneView.swift */; };
+		4848DD43259F568500EE9B30 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD18259F568300EE9B30 /* SceneView.swift */; };
 		4848DD44259F568500EE9B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4848DD19259F568500EE9B30 /* Assets.xcassets */; };
 		4848DD45259F568500EE9B30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4848DD19259F568500EE9B30 /* Assets.xcassets */; };
 		4848DD59259F5CD600EE9B30 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD58259F5CD600EE9B30 /* Effect.swift */; };
@@ -33,6 +51,24 @@
 		489E455C25A0F0F6006D297C /* DebugPrintSoundRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E455A25A0F0F6006D297C /* DebugPrintSoundRenderer.swift */; };
 		489E456C25A113CA006D297C /* EffectStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E456B25A113CA006D297C /* EffectStatusButton.swift */; };
 		489E456D25A113CA006D297C /* EffectStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E456B25A113CA006D297C /* EffectStatusButton.swift */; };
+		48BA587025AA2C0A0073A1C3 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeView.swift */; };
+		48BA587125AA2C0A0073A1C3 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeView.swift */; };
+		48D1815125A505E300D4AF99 /* EffectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815025A505E300D4AF99 /* EffectScene.swift */; };
+		48D1815B25A50A9500D4AF99 /* ScenePlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */; };
+		48D1816125A50E8300D4AF99 /* SceneDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1816025A50E8300D4AF99 /* SceneDescription.swift */; };
+		48D1816625A50E8800D4AF99 /* SceneDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1816025A50E8300D4AF99 /* SceneDescription.swift */; };
+		48D1816B25A50E8C00D4AF99 /* ScenePlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */; };
+		48D1817025A50E9000D4AF99 /* EffectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815025A505E300D4AF99 /* EffectScene.swift */; };
+		48D1817A25A77BA700D4AF99 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1817925A77BA700D4AF99 /* SceneManager.swift */; };
+		48D1817B25A77BA700D4AF99 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1817925A77BA700D4AF99 /* SceneManager.swift */; };
+		48D1818125A7874F00D4AF99 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1818025A7874F00D4AF99 /* Tree.swift */; };
+		48D1818225A7874F00D4AF99 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1818025A7874F00D4AF99 /* Tree.swift */; };
+		48D1818D25A79FB400D4AF99 /* LiteralSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1818C25A79FB400D4AF99 /* LiteralSceneManager.swift */; };
+		48D1818E25A79FB400D4AF99 /* LiteralSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1818C25A79FB400D4AF99 /* LiteralSceneManager.swift */; };
+		48D1819425A8D74100D4AF99 /* EffectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819325A8D74100D4AF99 /* EffectProvider.swift */; };
+		48D1819525A8D74100D4AF99 /* EffectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819325A8D74100D4AF99 /* EffectProvider.swift */; };
+		48D1819F25A8F51800D4AF99 /* SceneSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819E25A8F51800D4AF99 /* SceneSelection.swift */; };
+		48D181A025A8F51800D4AF99 /* SceneSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819E25A8F51800D4AF99 /* SceneSelection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +89,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectLibraryView.swift; sourceTree = "<group>"; };
+		4820AE0825A3A31A0001CC53 /* Color+lighten-darken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+lighten-darken.swift"; sourceTree = "<group>"; };
+		4820AE1425A4F3030001CC53 /* LogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicController.swift; sourceTree = "<group>"; };
+		4820AE2325A4F6010001CC53 /* LiteralLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralLibrary.swift; sourceTree = "<group>"; };
+		4820AE2F25A4F6170001CC53 /* StoredLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredLibrary.swift; sourceTree = "<group>"; };
 		482777CD25A1CD5E006ADB49 /* RadialProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialProgressViewStyle.swift; sourceTree = "<group>"; };
+		482777D825A21BBB006ADB49 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		482777E025A228F0006ADB49 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		482777E725A23419006ADB49 /* SoundSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSource.swift; sourceTree = "<group>"; };
+		482777EF25A23C77006ADB49 /* FilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
 		4848DD17259F568300EE9B30 /* EffectScapadesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectScapadesApp.swift; sourceTree = "<group>"; };
-		4848DD18259F568300EE9B30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4848DD18259F568300EE9B30 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		4848DD19259F568500EE9B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4848DD1E259F568500EE9B30 /* EffectScapades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectScapades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4848DD21259F568500EE9B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +121,15 @@
 		489E455A25A0F0F6006D297C /* DebugPrintSoundRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrintSoundRenderer.swift; sourceTree = "<group>"; };
 		489E456B25A113CA006D297C /* EffectStatusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectStatusButton.swift; sourceTree = "<group>"; };
 		489E458525A1235D006D297C /* fireball.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fireball.m4a; sourceTree = "<group>"; };
+		48BA586F25AA2C0A0073A1C3 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		48D1815025A505E300D4AF99 /* EffectScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectScene.swift; sourceTree = "<group>"; };
+		48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePlaybackManager.swift; sourceTree = "<group>"; };
+		48D1816025A50E8300D4AF99 /* SceneDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDescription.swift; sourceTree = "<group>"; };
+		48D1817925A77BA700D4AF99 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		48D1818025A7874F00D4AF99 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		48D1818C25A79FB400D4AF99 /* LiteralSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralSceneManager.swift; sourceTree = "<group>"; };
+		48D1819325A8D74100D4AF99 /* EffectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectProvider.swift; sourceTree = "<group>"; };
+		48D1819E25A8F51800D4AF99 /* SceneSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSelection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +164,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4820AE2E25A4F6060001CC53 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				482777D825A21BBB006ADB49 /* Library.swift */,
+				4820AE2325A4F6010001CC53 /* LiteralLibrary.swift */,
+				4820AE2F25A4F6170001CC53 /* StoredLibrary.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		482777DF25A228E1006ADB49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				482777E025A228F0006ADB49 /* Color+Codable.swift */,
+				4820AE0825A3A31A0001CC53 /* Color+lighten-darken.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		482777EE25A23C6B006ADB49 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				482777EF25A23C77006ADB49 /* FilesManager.swift */,
+				48D1818025A7874F00D4AF99 /* Tree.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		4848DD11259F568300EE9B30 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +207,8 @@
 		4848DD16259F568300EE9B30 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				482777EE25A23C6B006ADB49 /* Utility */,
+				482777DF25A228E1006ADB49 /* Extensions */,
 				489E456A25A11388006D297C /* Model */,
 				489E456925A11373006D297C /* UI */,
 				4848DD17259F568300EE9B30 /* EffectScapadesApp.swift */,
@@ -184,8 +268,10 @@
 		4848DD5F259F6A0900EE9B30 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
+				4848DD58259F5CD600EE9B30 /* Effect.swift */,
+				4848DD6B259F78AE00EE9B30 /* Audio */,
 				4875774C259FCCE700E93474 /* Playback */,
-				4875774B259FCCDC00E93474 /* Effect */,
+				4820AE2E25A4F6060001CC53 /* Library */,
 			);
 			path = Effects;
 			sourceTree = "<group>";
@@ -196,17 +282,9 @@
 				4848DD60259F6AA100EE9B30 /* SoundEffect.swift */,
 				48757744259FC6F500E93474 /* AVAudioSoundRenderer.swift */,
 				489E455A25A0F0F6006D297C /* DebugPrintSoundRenderer.swift */,
+				482777E725A23419006ADB49 /* SoundSource.swift */,
 			);
 			path = Audio;
-			sourceTree = "<group>";
-		};
-		4875774B259FCCDC00E93474 /* Effect */ = {
-			isa = PBXGroup;
-			children = (
-				4848DD58259F5CD600EE9B30 /* Effect.swift */,
-				4848DD6B259F78AE00EE9B30 /* Audio */,
-			);
-			path = Effect;
 			sourceTree = "<group>";
 		};
 		4875774C259FCCE700E93474 /* Playback */ = {
@@ -220,9 +298,10 @@
 		489E456925A11373006D297C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				4848DD18259F568300EE9B30 /* ContentView.swift */,
-				489E456B25A113CA006D297C /* EffectStatusButton.swift */,
-				482777CD25A1CD5E006ADB49 /* RadialProgressViewStyle.swift */,
+				48BA587A25AA68D40073A1C3 /* Utility */,
+				4848DD18259F568300EE9B30 /* SceneView.swift */,
+				4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */,
+				48D1819E25A8F51800D4AF99 /* SceneSelection.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -230,9 +309,42 @@
 		489E456A25A11388006D297C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4820AE1425A4F3030001CC53 /* LogicController.swift */,
+				48D1814F25A5050D00D4AF99 /* Scene */,
 				4848DD5F259F6A0900EE9B30 /* Effects */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		48BA587A25AA68D40073A1C3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				482777CD25A1CD5E006ADB49 /* RadialProgressViewStyle.swift */,
+				489E456B25A113CA006D297C /* EffectStatusButton.swift */,
+				48BA586F25AA2C0A0073A1C3 /* TreeView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		48D1814F25A5050D00D4AF99 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				48D1818725A7919D00D4AF99 /* Manager */,
+				48D1816025A50E8300D4AF99 /* SceneDescription.swift */,
+				48D1815025A505E300D4AF99 /* EffectScene.swift */,
+				48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */,
+				48D1819325A8D74100D4AF99 /* EffectProvider.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		48D1818725A7919D00D4AF99 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				48D1817925A77BA700D4AF99 /* SceneManager.swift */,
+				48D1818C25A79FB400D4AF99 /* LiteralSceneManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,13 +510,31 @@
 			files = (
 				48757745259FC6F500E93474 /* AVAudioSoundRenderer.swift in Sources */,
 				4848DD59259F5CD600EE9B30 /* Effect.swift in Sources */,
+				48D1818D25A79FB400D4AF99 /* LiteralSceneManager.swift in Sources */,
+				4820AE1525A4F3030001CC53 /* LogicController.swift in Sources */,
 				4848DD6D259F798500EE9B30 /* EffectPlayer.swift in Sources */,
-				4848DD42259F568500EE9B30 /* ContentView.swift in Sources */,
+				4848DD42259F568500EE9B30 /* SceneView.swift in Sources */,
+				48BA587025AA2C0A0073A1C3 /* TreeView.swift in Sources */,
+				482777F025A23C77006ADB49 /* FilesManager.swift in Sources */,
 				4848DD61259F6AA100EE9B30 /* SoundEffect.swift in Sources */,
 				489E455B25A0F0F6006D297C /* DebugPrintSoundRenderer.swift in Sources */,
+				48D1819425A8D74100D4AF99 /* EffectProvider.swift in Sources */,
 				489E456C25A113CA006D297C /* EffectStatusButton.swift in Sources */,
+				482777D925A21BBB006ADB49 /* Library.swift in Sources */,
+				48D1816125A50E8300D4AF99 /* SceneDescription.swift in Sources */,
+				48D1819F25A8F51800D4AF99 /* SceneSelection.swift in Sources */,
 				4848DD40259F568500EE9B30 /* EffectScapadesApp.swift in Sources */,
+				4820AE0925A3A31A0001CC53 /* Color+lighten-darken.swift in Sources */,
+				482777E125A228F0006ADB49 /* Color+Codable.swift in Sources */,
+				482777E825A23419006ADB49 /* SoundSource.swift in Sources */,
+				48D1815125A505E300D4AF99 /* EffectScene.swift in Sources */,
+				48D1817A25A77BA700D4AF99 /* SceneManager.swift in Sources */,
+				48D1818125A7874F00D4AF99 /* Tree.swift in Sources */,
+				4820AE3025A4F6170001CC53 /* StoredLibrary.swift in Sources */,
 				482777CE25A1CD5E006ADB49 /* RadialProgressViewStyle.swift in Sources */,
+				48D1815B25A50A9500D4AF99 /* ScenePlaybackManager.swift in Sources */,
+				4820AE2425A4F6010001CC53 /* LiteralLibrary.swift in Sources */,
+				4820ADFE25A264D80001CC53 /* EffectLibraryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,13 +544,31 @@
 			files = (
 				48757746259FC6F500E93474 /* AVAudioSoundRenderer.swift in Sources */,
 				4848DD5A259F5CD600EE9B30 /* Effect.swift in Sources */,
+				48D1818E25A79FB400D4AF99 /* LiteralSceneManager.swift in Sources */,
+				4820AE1625A4F3030001CC53 /* LogicController.swift in Sources */,
+				48D1817025A50E9000D4AF99 /* EffectScene.swift in Sources */,
+				48D1816625A50E8800D4AF99 /* SceneDescription.swift in Sources */,
+				48BA587125AA2C0A0073A1C3 /* TreeView.swift in Sources */,
 				4848DD6E259F798500EE9B30 /* EffectPlayer.swift in Sources */,
-				4848DD43259F568500EE9B30 /* ContentView.swift in Sources */,
+				4848DD43259F568500EE9B30 /* SceneView.swift in Sources */,
+				482777F125A23C77006ADB49 /* FilesManager.swift in Sources */,
+				48D1819525A8D74100D4AF99 /* EffectProvider.swift in Sources */,
 				4848DD62259F6AA100EE9B30 /* SoundEffect.swift in Sources */,
 				489E455C25A0F0F6006D297C /* DebugPrintSoundRenderer.swift in Sources */,
 				489E456D25A113CA006D297C /* EffectStatusButton.swift in Sources */,
+				48D181A025A8F51800D4AF99 /* SceneSelection.swift in Sources */,
+				482777DA25A21BBB006ADB49 /* Library.swift in Sources */,
 				4848DD41259F568500EE9B30 /* EffectScapadesApp.swift in Sources */,
+				4820AE0A25A3A31A0001CC53 /* Color+lighten-darken.swift in Sources */,
+				482777E225A228F0006ADB49 /* Color+Codable.swift in Sources */,
+				482777E925A23419006ADB49 /* SoundSource.swift in Sources */,
+				48D1817B25A77BA700D4AF99 /* SceneManager.swift in Sources */,
+				48D1818225A7874F00D4AF99 /* Tree.swift in Sources */,
+				4820AE3125A4F6170001CC53 /* StoredLibrary.swift in Sources */,
 				482777CF25A1CD5E006ADB49 /* RadialProgressViewStyle.swift in Sources */,
+				48D1816B25A50E8C00D4AF99 /* ScenePlaybackManager.swift in Sources */,
+				4820AE2525A4F6010001CC53 /* LiteralLibrary.swift in Sources */,
+				4820ADFF25A264D80001CC53 /* EffectLibraryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

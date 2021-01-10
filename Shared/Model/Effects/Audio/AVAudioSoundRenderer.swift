@@ -16,21 +16,44 @@ class AVAudioSoundRenderer: SoundRenderer {
             self.isPlaying = false
         }
     }
+
     private var playerObservers = Set<AnyCancellable>()
-    
-    @Published var progress: Double = 0.5
-    @Published var isPlaying: Bool = false
+    private var progressComputer: AnyCancellable?
+
+    @Published var progress: Double = 0.0
+    @Published var isPlaying: Bool = false {
+        didSet {
+            self.observeProgress()
+        }
+    }
+    var repeats: Bool = false
 
     private lazy var avAudioPlayerObserver: AVAudioPlayerObserver = {
         let observer = AVAudioPlayerObserver()
-        observer.$isPlaying.assign(to: &$isPlaying)
+        observer.$isPlaying.sink { self.isPlayingUpdates(isPlaying: $0) }.store(in: &playerObservers)
         return observer
     }()
     private var avAudioPlayer: AVAudioPlayer? {
         didSet {
+            self.playerObservers.forEach { c in c.cancel() }
+
             self.playerObservers.removeAll(keepingCapacity: true)
+            self.avAudioPlayer?.numberOfLoops = 0
             self.avAudioPlayer?.delegate = avAudioPlayerObserver
-            Timer.publish(every: 1/60, on: .main, in: .default)
+        }
+    }
+
+    private func isPlayingUpdates(isPlaying: Bool) {
+        if self.repeats && !isPlaying {
+            self.play()
+        } else {
+            self.isPlaying = isPlaying
+        }
+    }
+
+    private func observeProgress() {
+        if isPlaying {
+            self.progressComputer = Timer.publish(every: 1/60, on: .main, in: .default)
                 .autoconnect()
                 .sink { [weak self] _ in
                     if let player = self?.avAudioPlayer {
@@ -39,19 +62,14 @@ class AVAudioSoundRenderer: SoundRenderer {
                         self?.progress = 0
                     }
                 }
-                .store(in: &playerObservers)
+        } else {
+            self.progressComputer?.cancel()
         }
     }
 
-    func prepare(file: String) {
-        print("AVAudioSoundRenderer: play(file: \(file))")
-        guard let url = Bundle.main.url(forResource: file, withExtension: nil) else {
-            print("AVAudioSoundRenderer: url not found")
-            return
-        }
-
+    func prepare(file: URL) {
         do {
-            self.avAudioPlayer = try AVAudioPlayer(contentsOf: url)
+            self.avAudioPlayer = try AVAudioPlayer(contentsOf: file)
         } catch {
             print("AVAudioSoundRenderer: loading content not possible")
         }
