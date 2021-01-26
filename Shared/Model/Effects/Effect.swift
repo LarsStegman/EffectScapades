@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 struct EffectSettings: Codable {
-    let accentColor: Color?
+    let accentColor: Color
 }
 
 extension EffectSettings {
-    static let `default` = EffectSettings(accentColor: nil)
+    static let `default` = EffectSettings(accentColor: .random)
 }
 
 struct Effect: Identifiable, Codable {

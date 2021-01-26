@@ -8,10 +8,9 @@
 import Foundation
 
 class LiteralSceneManager: SceneManager {
-    @Published var scenes: SceneNode?
-    @Published var activeScene: EffectScene? = nil
+    @Published var scenes: SceneFolder
 
-    init(scenes: SceneNode? = nil) {
+    init(scenes: SceneFolder) {
         self.scenes = scenes
     }
 }

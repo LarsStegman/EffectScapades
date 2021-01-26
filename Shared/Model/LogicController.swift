@@ -18,11 +18,13 @@ class LogicController {
     }()
 
     init(library: AnyEffectLibrary,
-         sceneManager: AnySceneManager = LiteralSceneManager(scenes: .leaf(EffectScene(id: UUID(),
-                                                                                 name: "Black Cabin",
-                                                                                 description: "A cabin on the edge of a precipice",
-                                                                                 effects: [],
-                                                                                 settings: [:]))).eraseToAnySceneManager()) {
+         sceneManager: AnySceneManager = LiteralSceneManager(scenes: [
+            .leaf(EffectScene(id: UUID(),
+                             name: "Black Cabin",
+                             description: "A cabin on the edge of a precipice",
+                             effects: [],
+                             settings: [:]))
+         ]).eraseToAnySceneManager()) {
         self.library = library
         self.sceneManager = sceneManager
     }

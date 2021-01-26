@@ -8,7 +8,7 @@
 import Foundation
 
 enum Tree<D, V> {
-    case node(description: D, children: [Self<V, L>])
+    case node(description: D, children: [Self])
     case leaf(_ value: V)
 }
 
@@ -135,6 +135,24 @@ extension Tree: Hashable where D: Hashable, V: Hashable {
             c.forEach { t in
                 hasher.combine(t)
             }
+        }
+    }
+}
+
+extension Tree where D: Identifiable {
+    mutating func insert(_ v: Self, at: D.ID) {
+        switch self {
+        case .node(description: let d, children: let children) where d.id == at:
+            self = .node(description: d, children: children + [v])
+        case .node(description: let d, children: var children):
+            children = children.map { c in
+                var c = c
+                c.insert(v, at: at)
+                return c
+            }
+            self = .node(description: d, children: children)
+        case .leaf(_):
+            return
         }
     }
 }

@@ -32,7 +32,7 @@ struct SceneView: View {
                                     EffectStatusView(
                                         effect: effect,
                                         status: effectPlayer.status(of: effectId)
-                                    ).accentColor(effect.settings.accentColor ?? .accentColor)
+                                    ).accentColor(effect.settings.accentColor)
                                 }
                             } else {
                                 EmptyView()

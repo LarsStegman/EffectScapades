@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4805727D25B226D400C5FF0D /* StoredSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805727C25B226D400C5FF0D /* StoredSceneManager.swift */; };
+		4805727E25B226D500C5FF0D /* StoredSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805727C25B226D400C5FF0D /* StoredSceneManager.swift */; };
+		4805728425B2405400C5FF0D /* EffectConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805728325B2405400C5FF0D /* EffectConfigurationView.swift */; };
+		4805728525B2405400C5FF0D /* EffectConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4805728325B2405400C5FF0D /* EffectConfigurationView.swift */; };
+		481D425325AB5F3E00DFFF3D /* ProjectOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D425225AB5F3E00DFFF3D /* ProjectOverviewView.swift */; };
+		481D425A25AB605400DFFF3D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D425925AB605400DFFF3D /* Project.swift */; };
+		481D426325AB605900DFFF3D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D425925AB605400DFFF3D /* Project.swift */; };
+		481D427125AB616300DFFF3D /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D427025AB616300DFFF3D /* ProjectManager.swift */; };
+		481D427825AB635200DFFF3D /* LiteralProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D427725AB635200DFFF3D /* LiteralProjectManager.swift */; };
+		481D428225AB6AFB00DFFF3D /* StoredProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D428125AB6AFB00DFFF3D /* StoredProjectManager.swift */; };
+		481D428825AB6C0900DFFF3D /* StoredObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D428725AB6C0900DFFF3D /* StoredObjectManager.swift */; };
+		481D428E25AB765100DFFF3D /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481D428D25AB765100DFFF3D /* ProjectView.swift */; };
 		4820ADFE25A264D80001CC53 /* EffectLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */; };
 		4820ADFF25A264D80001CC53 /* EffectLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */; };
 		4820AE0925A3A31A0001CC53 /* Color+lighten-darken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820AE0825A3A31A0001CC53 /* Color+lighten-darken.swift */; };
@@ -29,6 +41,10 @@
 		482777E925A23419006ADB49 /* SoundSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777E725A23419006ADB49 /* SoundSource.swift */; };
 		482777F025A23C77006ADB49 /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777EF25A23C77006ADB49 /* FilesManager.swift */; };
 		482777F125A23C77006ADB49 /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482777EF25A23C77006ADB49 /* FilesManager.swift */; };
+		4844721F25BE206F00D672C6 /* CreateSceneNodeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844721E25BE206F00D672C6 /* CreateSceneNodeForm.swift */; };
+		4844722025BE206F00D672C6 /* CreateSceneNodeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844721E25BE206F00D672C6 /* CreateSceneNodeForm.swift */; };
+		4844722625BF3C5B00D672C6 /* SceneFolderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844722525BF3C5B00D672C6 /* SceneFolderPickerView.swift */; };
+		4844722725BF3C5B00D672C6 /* SceneFolderPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844722525BF3C5B00D672C6 /* SceneFolderPickerView.swift */; };
 		4848DD33259F568500EE9B30 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD32259F568500EE9B30 /* Tests_iOS.swift */; };
 		4848DD3E259F568500EE9B30 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD3D259F568500EE9B30 /* Tests_macOS.swift */; };
 		4848DD40259F568500EE9B30 /* EffectScapadesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD17259F568300EE9B30 /* EffectScapadesApp.swift */; };
@@ -43,6 +59,14 @@
 		4848DD62259F6AA100EE9B30 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD60259F6AA100EE9B30 /* SoundEffect.swift */; };
 		4848DD6D259F798500EE9B30 /* EffectPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD6C259F798500EE9B30 /* EffectPlayer.swift */; };
 		4848DD6E259F798500EE9B30 /* EffectPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848DD6C259F798500EE9B30 /* EffectPlayer.swift */; };
+		484C859325B8D0B50099296C /* ice-stress-break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 484C859225B8D0B50099296C /* ice-stress-break.mp3 */; };
+		484C859425B8D0B50099296C /* ice-stress-break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 484C859225B8D0B50099296C /* ice-stress-break.mp3 */; };
+		484C859F25BD72F40099296C /* ScenePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C859E25BD72F40099296C /* ScenePlayer.swift */; };
+		484C85A025BD72F40099296C /* ScenePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484C859E25BD72F40099296C /* ScenePlayer.swift */; };
+		4858CD1425B393C100FEC5CE /* SoundEffectConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4858CD1325B393C100FEC5CE /* SoundEffectConfigurationView.swift */; };
+		4858CD1525B393C100FEC5CE /* SoundEffectConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4858CD1325B393C100FEC5CE /* SoundEffectConfigurationView.swift */; };
+		4858CD2025B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4858CD1F25B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift */; };
+		4858CD2125B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4858CD1F25B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift */; };
 		4875773A259FC4CC00E93474 /* IceTemple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48757739259FC4CC00E93474 /* IceTemple.mp3 */; };
 		4875773B259FC4CC00E93474 /* IceTemple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48757739259FC4CC00E93474 /* IceTemple.mp3 */; };
 		48757745259FC6F500E93474 /* AVAudioSoundRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48757744259FC6F500E93474 /* AVAudioSoundRenderer.swift */; };
@@ -53,10 +77,14 @@
 		489E456D25A113CA006D297C /* EffectStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E456B25A113CA006D297C /* EffectStatusButton.swift */; };
 		48BA587025AA2C0A0073A1C3 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeView.swift */; };
 		48BA587125AA2C0A0073A1C3 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeView.swift */; };
+		48CAA0E125AB9E8D00D4BFEA /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */; };
+		48CAA0E225AB9E8D00D4BFEA /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */; };
+		48CAA0E825AE3BFE00D4BFEA /* ProjectThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAA0E725AE3BFE00D4BFEA /* ProjectThumbnail.swift */; };
+		48CAA0E925AE3BFE00D4BFEA /* ProjectThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAA0E725AE3BFE00D4BFEA /* ProjectThumbnail.swift */; };
 		48D1815125A505E300D4AF99 /* EffectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815025A505E300D4AF99 /* EffectScene.swift */; };
 		48D1815B25A50A9500D4AF99 /* ScenePlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */; };
-		48D1816125A50E8300D4AF99 /* SceneDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1816025A50E8300D4AF99 /* SceneDescription.swift */; };
-		48D1816625A50E8800D4AF99 /* SceneDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1816025A50E8300D4AF99 /* SceneDescription.swift */; };
+		48D1816125A50E8300D4AF99 /* SceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1816025A50E8300D4AF99 /* SceneNode.swift */; };
+		48D1816625A50E8800D4AF99 /* SceneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1816025A50E8300D4AF99 /* SceneNode.swift */; };
 		48D1816B25A50E8C00D4AF99 /* ScenePlaybackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */; };
 		48D1817025A50E9000D4AF99 /* EffectScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1815025A505E300D4AF99 /* EffectScene.swift */; };
 		48D1817A25A77BA700D4AF99 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1817925A77BA700D4AF99 /* SceneManager.swift */; };
@@ -67,8 +95,10 @@
 		48D1818E25A79FB400D4AF99 /* LiteralSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1818C25A79FB400D4AF99 /* LiteralSceneManager.swift */; };
 		48D1819425A8D74100D4AF99 /* EffectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819325A8D74100D4AF99 /* EffectProvider.swift */; };
 		48D1819525A8D74100D4AF99 /* EffectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819325A8D74100D4AF99 /* EffectProvider.swift */; };
-		48D1819F25A8F51800D4AF99 /* SceneSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819E25A8F51800D4AF99 /* SceneSelection.swift */; };
-		48D181A025A8F51800D4AF99 /* SceneSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819E25A8F51800D4AF99 /* SceneSelection.swift */; };
+		48D1819F25A8F51800D4AF99 /* SceneSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819E25A8F51800D4AF99 /* SceneSelectionView.swift */; };
+		48D181A025A8F51800D4AF99 /* SceneSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D1819E25A8F51800D4AF99 /* SceneSelectionView.swift */; };
+		48DA2EE425B2CFC300FBA8AC /* SoundSourceConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DA2EE325B2CFC300FBA8AC /* SoundSourceConfigurationView.swift */; };
+		48DA2EE525B2CFC300FBA8AC /* SoundSourceConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DA2EE325B2CFC300FBA8AC /* SoundSourceConfigurationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +119,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4805727C25B226D400C5FF0D /* StoredSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredSceneManager.swift; sourceTree = "<group>"; };
+		4805728325B2405400C5FF0D /* EffectConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectConfigurationView.swift; sourceTree = "<group>"; };
+		481D425225AB5F3E00DFFF3D /* ProjectOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOverviewView.swift; sourceTree = "<group>"; };
+		481D425925AB605400DFFF3D /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		481D427025AB616300DFFF3D /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
+		481D427725AB635200DFFF3D /* LiteralProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralProjectManager.swift; sourceTree = "<group>"; };
+		481D428125AB6AFB00DFFF3D /* StoredProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredProjectManager.swift; sourceTree = "<group>"; };
+		481D428725AB6C0900DFFF3D /* StoredObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredObjectManager.swift; sourceTree = "<group>"; };
+		481D428D25AB765100DFFF3D /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 		4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectLibraryView.swift; sourceTree = "<group>"; };
 		4820AE0825A3A31A0001CC53 /* Color+lighten-darken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+lighten-darken.swift"; sourceTree = "<group>"; };
 		4820AE1425A4F3030001CC53 /* LogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicController.swift; sourceTree = "<group>"; };
@@ -99,6 +138,8 @@
 		482777E025A228F0006ADB49 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		482777E725A23419006ADB49 /* SoundSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSource.swift; sourceTree = "<group>"; };
 		482777EF25A23C77006ADB49 /* FilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
+		4844721E25BE206F00D672C6 /* CreateSceneNodeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSceneNodeForm.swift; sourceTree = "<group>"; };
+		4844722525BF3C5B00D672C6 /* SceneFolderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFolderPickerView.swift; sourceTree = "<group>"; };
 		4848DD17259F568300EE9B30 /* EffectScapadesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectScapadesApp.swift; sourceTree = "<group>"; };
 		4848DD18259F568300EE9B30 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		4848DD19259F568500EE9B30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,20 +157,27 @@
 		4848DD58259F5CD600EE9B30 /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		4848DD60259F6AA100EE9B30 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 		4848DD6C259F798500EE9B30 /* EffectPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectPlayer.swift; sourceTree = "<group>"; };
+		484C859225B8D0B50099296C /* ice-stress-break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ice-stress-break.mp3"; sourceTree = "<group>"; };
+		484C859E25BD72F40099296C /* ScenePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePlayer.swift; sourceTree = "<group>"; };
+		4858CD1325B393C100FEC5CE /* SoundEffectConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectConfigurationView.swift; sourceTree = "<group>"; };
+		4858CD1F25B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSourceBundleFileConfigurationView.swift; sourceTree = "<group>"; };
 		48757739259FC4CC00E93474 /* IceTemple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = IceTemple.mp3; sourceTree = "<group>"; };
 		48757744259FC6F500E93474 /* AVAudioSoundRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioSoundRenderer.swift; sourceTree = "<group>"; };
 		489E455A25A0F0F6006D297C /* DebugPrintSoundRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrintSoundRenderer.swift; sourceTree = "<group>"; };
 		489E456B25A113CA006D297C /* EffectStatusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectStatusButton.swift; sourceTree = "<group>"; };
 		489E458525A1235D006D297C /* fireball.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fireball.m4a; sourceTree = "<group>"; };
 		48BA586F25AA2C0A0073A1C3 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+random.swift"; sourceTree = "<group>"; };
+		48CAA0E725AE3BFE00D4BFEA /* ProjectThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnail.swift; sourceTree = "<group>"; };
 		48D1815025A505E300D4AF99 /* EffectScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectScene.swift; sourceTree = "<group>"; };
 		48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePlaybackManager.swift; sourceTree = "<group>"; };
-		48D1816025A50E8300D4AF99 /* SceneDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDescription.swift; sourceTree = "<group>"; };
+		48D1816025A50E8300D4AF99 /* SceneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneNode.swift; sourceTree = "<group>"; };
 		48D1817925A77BA700D4AF99 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 		48D1818025A7874F00D4AF99 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		48D1818C25A79FB400D4AF99 /* LiteralSceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteralSceneManager.swift; sourceTree = "<group>"; };
 		48D1819325A8D74100D4AF99 /* EffectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectProvider.swift; sourceTree = "<group>"; };
-		48D1819E25A8F51800D4AF99 /* SceneSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSelection.swift; sourceTree = "<group>"; };
+		48D1819E25A8F51800D4AF99 /* SceneSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSelectionView.swift; sourceTree = "<group>"; };
+		48DA2EE325B2CFC300FBA8AC /* SoundSourceConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundSourceConfigurationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +212,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		481D424F25AB5F0900DFFF3D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				4848DD18259F568300EE9B30 /* SceneView.swift */,
+				48D1819E25A8F51800D4AF99 /* SceneSelectionView.swift */,
+				4844721E25BE206F00D672C6 /* CreateSceneNodeForm.swift */,
+				4844722525BF3C5B00D672C6 /* SceneFolderPickerView.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		481D425025AB5F1500DFFF3D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4858CD1E25B4981C00FEC5CE /* SoundEffectConfiguration */,
+				4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */,
+				4805728325B2405400C5FF0D /* EffectConfigurationView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		481D425125AB5F2300DFFF3D /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				481D428D25AB765100DFFF3D /* ProjectView.swift */,
+				481D425225AB5F3E00DFFF3D /* ProjectOverviewView.swift */,
+				48CAA0E725AE3BFE00D4BFEA /* ProjectThumbnail.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		481D425825AB5FE100DFFF3D /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				481D425925AB605400DFFF3D /* Project.swift */,
+				481D427625AB633600DFFF3D /* Manager */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		481D427625AB633600DFFF3D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				481D427025AB616300DFFF3D /* ProjectManager.swift */,
+				481D427725AB635200DFFF3D /* LiteralProjectManager.swift */,
+				481D428125AB6AFB00DFFF3D /* StoredProjectManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		4820AE2E25A4F6060001CC53 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +286,7 @@
 			children = (
 				482777EF25A23C77006ADB49 /* FilesManager.swift */,
 				48D1818025A7874F00D4AF99 /* Tree.swift */,
+				481D428725AB6C0900DFFF3D /* StoredObjectManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -207,13 +306,12 @@
 		4848DD16259F568300EE9B30 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				484C859125B8CF760099296C /* soundfiles */,
 				482777EE25A23C6B006ADB49 /* Utility */,
 				482777DF25A228E1006ADB49 /* Extensions */,
 				489E456A25A11388006D297C /* Model */,
 				489E456925A11373006D297C /* UI */,
 				4848DD17259F568300EE9B30 /* EffectScapadesApp.swift */,
-				48757739259FC4CC00E93474 /* IceTemple.mp3 */,
-				489E458525A1235D006D297C /* fireball.m4a */,
 				4848DD19259F568500EE9B30 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -269,14 +367,14 @@
 			isa = PBXGroup;
 			children = (
 				4848DD58259F5CD600EE9B30 /* Effect.swift */,
-				4848DD6B259F78AE00EE9B30 /* Audio */,
+				4848DD6B259F78AE00EE9B30 /* Sound */,
 				4875774C259FCCE700E93474 /* Playback */,
 				4820AE2E25A4F6060001CC53 /* Library */,
 			);
 			path = Effects;
 			sourceTree = "<group>";
 		};
-		4848DD6B259F78AE00EE9B30 /* Audio */ = {
+		4848DD6B259F78AE00EE9B30 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
 				4848DD60259F6AA100EE9B30 /* SoundEffect.swift */,
@@ -284,7 +382,35 @@
 				489E455A25A0F0F6006D297C /* DebugPrintSoundRenderer.swift */,
 				482777E725A23419006ADB49 /* SoundSource.swift */,
 			);
-			path = Audio;
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		484C859125B8CF760099296C /* soundfiles */ = {
+			isa = PBXGroup;
+			children = (
+				484C859225B8D0B50099296C /* ice-stress-break.mp3 */,
+				48757739259FC4CC00E93474 /* IceTemple.mp3 */,
+				489E458525A1235D006D297C /* fireball.m4a */,
+			);
+			path = soundfiles;
+			sourceTree = "<group>";
+		};
+		484C859D25BD71520099296C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				484C859E25BD72F40099296C /* ScenePlayer.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		4858CD1E25B4981C00FEC5CE /* SoundEffectConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				48DA2EE325B2CFC300FBA8AC /* SoundSourceConfigurationView.swift */,
+				4858CD1325B393C100FEC5CE /* SoundEffectConfigurationView.swift */,
+				4858CD1F25B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift */,
+			);
+			path = SoundEffectConfiguration;
 			sourceTree = "<group>";
 		};
 		4875774C259FCCE700E93474 /* Playback */ = {
@@ -298,10 +424,10 @@
 		489E456925A11373006D297C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				481D424F25AB5F0900DFFF3D /* Scene */,
+				481D425125AB5F2300DFFF3D /* Project */,
+				481D425025AB5F1500DFFF3D /* Library */,
 				48BA587A25AA68D40073A1C3 /* Utility */,
-				4848DD18259F568300EE9B30 /* SceneView.swift */,
-				4820ADFD25A264D80001CC53 /* EffectLibraryView.swift */,
-				48D1819E25A8F51800D4AF99 /* SceneSelection.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -309,8 +435,9 @@
 		489E456A25A11388006D297C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4820AE1425A4F3030001CC53 /* LogicController.swift */,
 				48D1814F25A5050D00D4AF99 /* Scene */,
+				481D425825AB5FE100DFFF3D /* Project */,
+				4820AE1425A4F3030001CC53 /* LogicController.swift */,
 				4848DD5F259F6A0900EE9B30 /* Effects */,
 			);
 			path = Model;
@@ -322,6 +449,7 @@
 				482777CD25A1CD5E006ADB49 /* RadialProgressViewStyle.swift */,
 				489E456B25A113CA006D297C /* EffectStatusButton.swift */,
 				48BA586F25AA2C0A0073A1C3 /* TreeView.swift */,
+				48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -329,13 +457,15 @@
 		48D1814F25A5050D00D4AF99 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				484C859D25BD71520099296C /* Player */,
 				48D1818725A7919D00D4AF99 /* Manager */,
-				48D1816025A50E8300D4AF99 /* SceneDescription.swift */,
+				48D1816025A50E8300D4AF99 /* SceneNode.swift */,
 				48D1815025A505E300D4AF99 /* EffectScene.swift */,
 				48D1815A25A50A9500D4AF99 /* ScenePlaybackManager.swift */,
 				48D1819325A8D74100D4AF99 /* EffectProvider.swift */,
 			);
-			path = Scene;
+			name = Scene;
+			path = Project/Scene;
 			sourceTree = "<group>";
 		};
 		48D1818725A7919D00D4AF99 /* Manager */ = {
@@ -343,6 +473,7 @@
 			children = (
 				48D1817925A77BA700D4AF99 /* SceneManager.swift */,
 				48D1818C25A79FB400D4AF99 /* LiteralSceneManager.swift */,
+				4805727C25B226D400C5FF0D /* StoredSceneManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -472,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				482777C325A12AF6006ADB49 /* fireball.m4a in Resources */,
+				484C859325B8D0B50099296C /* ice-stress-break.mp3 in Resources */,
 				4848DD44259F568500EE9B30 /* Assets.xcassets in Resources */,
 				4875773A259FC4CC00E93474 /* IceTemple.mp3 in Resources */,
 			);
@@ -482,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				482777C825A12AF6006ADB49 /* fireball.m4a in Resources */,
+				484C859425B8D0B50099296C /* ice-stress-break.mp3 in Resources */,
 				4848DD45259F568500EE9B30 /* Assets.xcassets in Resources */,
 				4875773B259FC4CC00E93474 /* IceTemple.mp3 in Resources */,
 			);
@@ -512,29 +645,46 @@
 				4848DD59259F5CD600EE9B30 /* Effect.swift in Sources */,
 				48D1818D25A79FB400D4AF99 /* LiteralSceneManager.swift in Sources */,
 				4820AE1525A4F3030001CC53 /* LogicController.swift in Sources */,
+				481D428E25AB765100DFFF3D /* ProjectView.swift in Sources */,
 				4848DD6D259F798500EE9B30 /* EffectPlayer.swift in Sources */,
 				4848DD42259F568500EE9B30 /* SceneView.swift in Sources */,
 				48BA587025AA2C0A0073A1C3 /* TreeView.swift in Sources */,
+				481D427125AB616300DFFF3D /* ProjectManager.swift in Sources */,
 				482777F025A23C77006ADB49 /* FilesManager.swift in Sources */,
 				4848DD61259F6AA100EE9B30 /* SoundEffect.swift in Sources */,
 				489E455B25A0F0F6006D297C /* DebugPrintSoundRenderer.swift in Sources */,
+				48CAA0E825AE3BFE00D4BFEA /* ProjectThumbnail.swift in Sources */,
 				48D1819425A8D74100D4AF99 /* EffectProvider.swift in Sources */,
 				489E456C25A113CA006D297C /* EffectStatusButton.swift in Sources */,
+				484C859F25BD72F40099296C /* ScenePlayer.swift in Sources */,
 				482777D925A21BBB006ADB49 /* Library.swift in Sources */,
-				48D1816125A50E8300D4AF99 /* SceneDescription.swift in Sources */,
-				48D1819F25A8F51800D4AF99 /* SceneSelection.swift in Sources */,
+				4805728425B2405400C5FF0D /* EffectConfigurationView.swift in Sources */,
+				48D1816125A50E8300D4AF99 /* SceneNode.swift in Sources */,
+				481D425A25AB605400DFFF3D /* Project.swift in Sources */,
+				48D1819F25A8F51800D4AF99 /* SceneSelectionView.swift in Sources */,
+				4858CD2025B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift in Sources */,
 				4848DD40259F568500EE9B30 /* EffectScapadesApp.swift in Sources */,
 				4820AE0925A3A31A0001CC53 /* Color+lighten-darken.swift in Sources */,
+				4844722625BF3C5B00D672C6 /* SceneFolderPickerView.swift in Sources */,
 				482777E125A228F0006ADB49 /* Color+Codable.swift in Sources */,
+				48CAA0E125AB9E8D00D4BFEA /* Color+random.swift in Sources */,
+				4844721F25BE206F00D672C6 /* CreateSceneNodeForm.swift in Sources */,
 				482777E825A23419006ADB49 /* SoundSource.swift in Sources */,
+				481D428825AB6C0900DFFF3D /* StoredObjectManager.swift in Sources */,
 				48D1815125A505E300D4AF99 /* EffectScene.swift in Sources */,
 				48D1817A25A77BA700D4AF99 /* SceneManager.swift in Sources */,
 				48D1818125A7874F00D4AF99 /* Tree.swift in Sources */,
+				481D428225AB6AFB00DFFF3D /* StoredProjectManager.swift in Sources */,
 				4820AE3025A4F6170001CC53 /* StoredLibrary.swift in Sources */,
 				482777CE25A1CD5E006ADB49 /* RadialProgressViewStyle.swift in Sources */,
 				48D1815B25A50A9500D4AF99 /* ScenePlaybackManager.swift in Sources */,
+				4858CD1425B393C100FEC5CE /* SoundEffectConfigurationView.swift in Sources */,
+				4805727D25B226D400C5FF0D /* StoredSceneManager.swift in Sources */,
+				481D425325AB5F3E00DFFF3D /* ProjectOverviewView.swift in Sources */,
+				481D427825AB635200DFFF3D /* LiteralProjectManager.swift in Sources */,
 				4820AE2425A4F6010001CC53 /* LiteralLibrary.swift in Sources */,
 				4820ADFE25A264D80001CC53 /* EffectLibraryView.swift in Sources */,
+				48DA2EE425B2CFC300FBA8AC /* SoundSourceConfigurationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,25 +697,36 @@
 				48D1818E25A79FB400D4AF99 /* LiteralSceneManager.swift in Sources */,
 				4820AE1625A4F3030001CC53 /* LogicController.swift in Sources */,
 				48D1817025A50E9000D4AF99 /* EffectScene.swift in Sources */,
-				48D1816625A50E8800D4AF99 /* SceneDescription.swift in Sources */,
+				48D1816625A50E8800D4AF99 /* SceneNode.swift in Sources */,
 				48BA587125AA2C0A0073A1C3 /* TreeView.swift in Sources */,
 				4848DD6E259F798500EE9B30 /* EffectPlayer.swift in Sources */,
 				4848DD43259F568500EE9B30 /* SceneView.swift in Sources */,
 				482777F125A23C77006ADB49 /* FilesManager.swift in Sources */,
+				4844722725BF3C5B00D672C6 /* SceneFolderPickerView.swift in Sources */,
+				48CAA0E225AB9E8D00D4BFEA /* Color+random.swift in Sources */,
 				48D1819525A8D74100D4AF99 /* EffectProvider.swift in Sources */,
+				4844722025BE206F00D672C6 /* CreateSceneNodeForm.swift in Sources */,
 				4848DD62259F6AA100EE9B30 /* SoundEffect.swift in Sources */,
+				4858CD1525B393C100FEC5CE /* SoundEffectConfigurationView.swift in Sources */,
 				489E455C25A0F0F6006D297C /* DebugPrintSoundRenderer.swift in Sources */,
 				489E456D25A113CA006D297C /* EffectStatusButton.swift in Sources */,
-				48D181A025A8F51800D4AF99 /* SceneSelection.swift in Sources */,
+				48D181A025A8F51800D4AF99 /* SceneSelectionView.swift in Sources */,
 				482777DA25A21BBB006ADB49 /* Library.swift in Sources */,
 				4848DD41259F568500EE9B30 /* EffectScapadesApp.swift in Sources */,
 				4820AE0A25A3A31A0001CC53 /* Color+lighten-darken.swift in Sources */,
 				482777E225A228F0006ADB49 /* Color+Codable.swift in Sources */,
+				48DA2EE525B2CFC300FBA8AC /* SoundSourceConfigurationView.swift in Sources */,
+				481D426325AB605900DFFF3D /* Project.swift in Sources */,
 				482777E925A23419006ADB49 /* SoundSource.swift in Sources */,
 				48D1817B25A77BA700D4AF99 /* SceneManager.swift in Sources */,
 				48D1818225A7874F00D4AF99 /* Tree.swift in Sources */,
+				4805728525B2405400C5FF0D /* EffectConfigurationView.swift in Sources */,
+				484C85A025BD72F40099296C /* ScenePlayer.swift in Sources */,
+				48CAA0E925AE3BFE00D4BFEA /* ProjectThumbnail.swift in Sources */,
 				4820AE3125A4F6170001CC53 /* StoredLibrary.swift in Sources */,
 				482777CF25A1CD5E006ADB49 /* RadialProgressViewStyle.swift in Sources */,
+				4805727E25B226D500C5FF0D /* StoredSceneManager.swift in Sources */,
+				4858CD2125B4985800FEC5CE /* SoundSourceBundleFileConfigurationView.swift in Sources */,
 				48D1816B25A50E8C00D4AF99 /* ScenePlaybackManager.swift in Sources */,
 				4820AE2525A4F6010001CC53 /* LiteralLibrary.swift in Sources */,
 				4820ADFF25A264D80001CC53 /* EffectLibraryView.swift in Sources */,

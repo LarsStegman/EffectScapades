@@ -12,7 +12,7 @@ protocol SoundRenderer: EffectComponentRenderer {
     func prepare(file: URL)
 }
 
-struct SoundEffect: EffectComponent {
+struct SoundEffect: EffectComponent, Equatable {
     let source: SoundSource
     let repeats: Bool
 

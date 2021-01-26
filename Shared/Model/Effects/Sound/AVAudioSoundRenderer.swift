@@ -18,12 +18,14 @@ class AVAudioSoundRenderer: SoundRenderer {
     }
 
     private var playerObservers = Set<AnyCancellable>()
-    private var progressComputer: AnyCancellable?
+    private lazy var displayLink: CADisplayLink = {
+        CADisplayLink(target: self, selector: #selector(updateProgress))
+    }()
 
     @Published var progress: Double = 0.0
     @Published var isPlaying: Bool = false {
         didSet {
-            self.observeProgress()
+            self.createDisplayLink()
         }
     }
     var repeats: Bool = false
@@ -51,19 +53,20 @@ class AVAudioSoundRenderer: SoundRenderer {
         }
     }
 
-    private func observeProgress() {
-        if isPlaying {
-            self.progressComputer = Timer.publish(every: 1/60, on: .main, in: .default)
-                .autoconnect()
-                .sink { [weak self] _ in
-                    if let player = self?.avAudioPlayer {
-                        self?.progress = player.currentTime / player.duration
-                    } else {
-                        self?.progress = 0
-                    }
-                }
+    @objc private func updateProgress() {
+        if let player = self.avAudioPlayer {
+            self.progress = player.currentTime / player.duration
         } else {
-            self.progressComputer?.cancel()
+            self.progress = 0
+        }
+    }
+
+    private func createDisplayLink() {
+        if isPlaying {
+            self.displayLink = CADisplayLink(target: self, selector: #selector(updateProgress))
+            self.displayLink.add(to: .current, forMode: .common)
+        } else {
+            self.displayLink.invalidate()
         }
     }
 

@@ -26,7 +26,7 @@ class FilesManager {
             throw Error.invalidDirectory
         }
 
-        if fileManager.fileExists(atPath: url.absoluteString) && !overwrite {
+        if fileManager.fileExists(atPath: url.path) && !overwrite {
             throw Error.fileAlreadyExists
         }
 
@@ -43,7 +43,7 @@ class FilesManager {
             throw Error.invalidDirectory
         }
 
-        guard fileManager.fileExists(atPath: url.absoluteString) else {
+        guard fileManager.fileExists(atPath: url.path) else {
             throw Error.fileNotExists
         }
 

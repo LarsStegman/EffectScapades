@@ -8,14 +8,16 @@
 import Foundation
 import SwiftUI
 
+/// A view that can display tree data.
 struct TreeView<D: Identifiable,
                 V: Identifiable,
                 NodeView: View,
                 LeafView: View>: View where D.ID == V.ID {
-    struct ContentView: View {
+    private struct ContentView: View {
         let data: [Tree<D, V>]
 
         @State private var isExpanded: [D.ID: Bool] = [:]
+        let defaultExpanded: Bool
         let nodeView: (D) -> NodeView
         let leafView: (V) -> LeafView
 
@@ -24,11 +26,12 @@ struct TreeView<D: Identifiable,
                 switch treeNode {
                     case .node(let d, let children):
                         DisclosureGroup(isExpanded: Binding(get: {
-                            isExpanded[d.id, default: false]
+                            isExpanded[d.id, default: self.defaultExpanded]
                         }, set: { expanded in
                             isExpanded[d.id] = expanded
                         })) {
-                            ContentView(data: children, nodeView: nodeView, leafView: leafView)
+                            ContentView(data: children, defaultExpanded: defaultExpanded,
+                                        nodeView: nodeView, leafView: leafView)
                         } label: {
                             nodeView(d)
                         }
@@ -40,30 +43,31 @@ struct TreeView<D: Identifiable,
         }
     }
 
-    private let data: Tree<D, V>
+    private let data: [Tree<D, V>]
+    private let defaultExpanded: Bool
     private let nodeView: (D) -> NodeView
     private let leafView: (V) -> LeafView
 
-    init(_ data: Tree<D, V>,
+    init(_ data: [Tree<D, V>],
+         defaultExpanded: Bool = false,
          @ViewBuilder nodeView: @escaping (D) -> NodeView,
          @ViewBuilder leafView: @escaping (V) -> LeafView) {
         self.data = data
+        self.defaultExpanded = defaultExpanded
         self.nodeView = nodeView
         self.leafView = leafView
     }
 
-    private var rootData: [Tree<D, V>] {
-        switch data {
-        case .node(_, let children):
-            return children
-        case .leaf(_):
-            return [data]
-        }
+    init(_ data: Tree<D, V>,
+         defaultExpanded: Bool = false,
+         @ViewBuilder nodeView: @escaping (D) -> NodeView,
+         @ViewBuilder leafView: @escaping (V) -> LeafView) {
+        self.init([data], defaultExpanded: defaultExpanded, nodeView: nodeView, leafView: leafView)
     }
 
     var body: some View {
         List {
-            ContentView(data: rootData, nodeView: nodeView, leafView: leafView)
+            ContentView(data: data, defaultExpanded: defaultExpanded, nodeView: nodeView, leafView: leafView)
         }
     }
 }

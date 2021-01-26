@@ -18,7 +18,7 @@ struct EffectStatusView: View {
     }
 
     var accentColor: Color {
-        effect.settings.accentColor ?? Color.accentColor
+        effect.settings.accentColor
     }
 
     var background: some View {
@@ -61,7 +61,6 @@ struct EffectStatusView: View {
                         if effect.soundEffect != nil {
                             Image(systemName: "speaker.3.fill")
                         }
-                        Image(systemName: "bolt.fill")
                         Spacer()
                     }
                 }
