@@ -33,6 +33,8 @@ struct CreateSceneNodeForm: View {
                     Text(folder?.name ?? "Folder")
                 }
             }
+            .isDetailLink(false)
+            
             TextField("Name", text: $name)
             if (type == .scene) {
                 TextField("Description", text: $description)

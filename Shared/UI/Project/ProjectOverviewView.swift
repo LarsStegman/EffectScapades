@@ -13,7 +13,7 @@ struct ProjectOverviewView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [.init(.adaptive(minimum: 150, maximum: 200))]) {
+            LazyVGrid(columns: [.init(.adaptive(minimum: 150, maximum: 200))], alignment: .center) {
                 ForEach(Array(projectsManager.projects.values)) { project in
                     Button(action: {
                         self.activeProject = project
@@ -23,6 +23,7 @@ struct ProjectOverviewView: View {
                     .buttonStyle(PlainButtonStyle())
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding()
         }
         .fullScreenCover(item: $activeProject) {
@@ -31,7 +32,7 @@ struct ProjectOverviewView: View {
     }
 }
 
-struct ProjectSelectionView_Previews: PreviewProvider {
+struct ProjectOverviewView_Previews: PreviewProvider {
     static var previews: some View {
         ProjectOverviewView()
             .environmentObject(LiteralProjectManager(projects: [

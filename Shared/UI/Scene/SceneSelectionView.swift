@@ -14,23 +14,38 @@ struct SceneSelectionView: View {
     @State var showCreateSheet: Bool = false
 
     var body: some View {
-        Group {
+        VStack {
             if !sceneManager.scenes.isEmpty {
                 sceneStructureView
             } else {
                 Text("No scenes")
                     .font(.system(size: 32))
             }
+            Spacer()
+            Divider()
+            HStack {
+                Spacer()
+                NavigationLink(destination: CreateSceneNodeForm()) {
+                    Image(systemName: "plus")
+                }
+                .isDetailLink(false)
+            }
+            .padding()
         }
     }
 
     var sceneStructureView: some View {
-        TreeView(sceneManager.scenes, defaultExpanded: true) { description in
-            Text(description.name)
-        } leafView: { scene in
-            NavigationLink(destination: SceneView(scene: scene)) {
-                Text(scene.name)
+        List {
+            TreeViewContent(sceneManager.scenes, defaultExpanded: true) { description in
+                Text(description.name)
+            } leafView: { scene in
+                NavigationLink(destination: SceneView(scene: scene)) {
+                    Text(scene.name)
+                }
             }
+//            .onDelete(perform: { index in
+//                sceneManager.delete(at: index)
+//            })
         }
     }
 }

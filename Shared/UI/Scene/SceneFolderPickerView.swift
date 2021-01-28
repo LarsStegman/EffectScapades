@@ -43,10 +43,12 @@ struct SceneFolderSelectionView: View {
     }
 
     var body: some View {
-        TreeView(folderRoot, defaultExpanded: true) { folder in
-            sceneFolder(folder: folder)
-        } leafView: { folder in
-            sceneFolder(folder: folder)
+        List {
+            TreeViewContent(folderRoot, defaultExpanded: true) { folder in
+                sceneFolder(folder: folder)
+            } leafView: { folder in
+                sceneFolder(folder: folder)
+            }
         }
     }
 

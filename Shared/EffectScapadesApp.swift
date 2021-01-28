@@ -38,6 +38,7 @@ struct EffectScapadesApp: App {
                     }
                     .navigationTitle("Projects")
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 .fullScreenCover(isPresented: $showEffectLibrary) {
                     EffectLibraryView()
                 }

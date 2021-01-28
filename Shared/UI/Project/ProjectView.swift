@@ -22,18 +22,26 @@ struct ProjectView: View {
         NavigationView {
             SceneSelectionView()
                 .navigationTitle(project.name)
-                .navigationBarItems(leading: Button(action: {
-                    self.presentation.wrappedValue.dismiss()
-                }) {
-                    Image(systemName: "rectangle.grid.2x2")
-                }, trailing: NavigationLink(destination: CreateSceneNodeForm()) {
-                    Image(systemName: "plus")
-                }
-                .isDetailLink(false))
+                .navigationBarItems(leading: leadingButtons, trailing: trailingButtons)
+
             if let firstScene = sceneManager.scenes.first?.inorder().first {
                 SceneView(scene: firstScene)
             }
         }
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
         .environmentObject(sceneManager)
     }
+
+    var leadingButtons: some View {
+        Button(action: {
+            self.presentation.wrappedValue.dismiss()
+        }) {
+            Image(systemName: "rectangle.grid.2x2")
+        }
+    }
+
+    var trailingButtons: some View {
+        EditButton()
+    }
+
 }

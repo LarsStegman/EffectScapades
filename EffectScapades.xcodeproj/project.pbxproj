@@ -75,8 +75,8 @@
 		489E455C25A0F0F6006D297C /* DebugPrintSoundRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E455A25A0F0F6006D297C /* DebugPrintSoundRenderer.swift */; };
 		489E456C25A113CA006D297C /* EffectStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E456B25A113CA006D297C /* EffectStatusButton.swift */; };
 		489E456D25A113CA006D297C /* EffectStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489E456B25A113CA006D297C /* EffectStatusButton.swift */; };
-		48BA587025AA2C0A0073A1C3 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeView.swift */; };
-		48BA587125AA2C0A0073A1C3 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeView.swift */; };
+		48BA587025AA2C0A0073A1C3 /* TreeViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeViewContent.swift */; };
+		48BA587125AA2C0A0073A1C3 /* TreeViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BA586F25AA2C0A0073A1C3 /* TreeViewContent.swift */; };
 		48CAA0E125AB9E8D00D4BFEA /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */; };
 		48CAA0E225AB9E8D00D4BFEA /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */; };
 		48CAA0E825AE3BFE00D4BFEA /* ProjectThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAA0E725AE3BFE00D4BFEA /* ProjectThumbnail.swift */; };
@@ -166,7 +166,7 @@
 		489E455A25A0F0F6006D297C /* DebugPrintSoundRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrintSoundRenderer.swift; sourceTree = "<group>"; };
 		489E456B25A113CA006D297C /* EffectStatusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectStatusButton.swift; sourceTree = "<group>"; };
 		489E458525A1235D006D297C /* fireball.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fireball.m4a; sourceTree = "<group>"; };
-		48BA586F25AA2C0A0073A1C3 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
+		48BA586F25AA2C0A0073A1C3 /* TreeViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeViewContent.swift; sourceTree = "<group>"; };
 		48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+random.swift"; sourceTree = "<group>"; };
 		48CAA0E725AE3BFE00D4BFEA /* ProjectThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectThumbnail.swift; sourceTree = "<group>"; };
 		48D1815025A505E300D4AF99 /* EffectScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectScene.swift; sourceTree = "<group>"; };
@@ -448,7 +448,7 @@
 			children = (
 				482777CD25A1CD5E006ADB49 /* RadialProgressViewStyle.swift */,
 				489E456B25A113CA006D297C /* EffectStatusButton.swift */,
-				48BA586F25AA2C0A0073A1C3 /* TreeView.swift */,
+				48BA586F25AA2C0A0073A1C3 /* TreeViewContent.swift */,
 				48CAA0E025AB9E8D00D4BFEA /* Color+random.swift */,
 			);
 			path = Utility;
@@ -648,7 +648,7 @@
 				481D428E25AB765100DFFF3D /* ProjectView.swift in Sources */,
 				4848DD6D259F798500EE9B30 /* EffectPlayer.swift in Sources */,
 				4848DD42259F568500EE9B30 /* SceneView.swift in Sources */,
-				48BA587025AA2C0A0073A1C3 /* TreeView.swift in Sources */,
+				48BA587025AA2C0A0073A1C3 /* TreeViewContent.swift in Sources */,
 				481D427125AB616300DFFF3D /* ProjectManager.swift in Sources */,
 				482777F025A23C77006ADB49 /* FilesManager.swift in Sources */,
 				4848DD61259F6AA100EE9B30 /* SoundEffect.swift in Sources */,
@@ -698,7 +698,7 @@
 				4820AE1625A4F3030001CC53 /* LogicController.swift in Sources */,
 				48D1817025A50E9000D4AF99 /* EffectScene.swift in Sources */,
 				48D1816625A50E8800D4AF99 /* SceneNode.swift in Sources */,
-				48BA587125AA2C0A0073A1C3 /* TreeView.swift in Sources */,
+				48BA587125AA2C0A0073A1C3 /* TreeViewContent.swift in Sources */,
 				4848DD6E259F798500EE9B30 /* EffectPlayer.swift in Sources */,
 				4848DD43259F568500EE9B30 /* SceneView.swift in Sources */,
 				482777F125A23C77006ADB49 /* FilesManager.swift in Sources */,

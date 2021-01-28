@@ -30,7 +30,7 @@ class StoredObjectManager<T: Codable>: ObservableObject {
             let data = try encoder.encode(self.objects)
             try fileManager.save(fileNamed: self.filename, data: data, overwrite: true)
         } catch {
-            debugPrint("Unable to save effects")
+            debugPrint("Unable to save effects", error)
         }
     }
 
@@ -40,6 +40,7 @@ class StoredObjectManager<T: Codable>: ObservableObject {
             let fileData = try fileManager.read(fileNamed: filename)
             self.objects = try decoder.decode(T.self, from: fileData)
         } catch {
+            debugPrint("Failed to load objects", error, "from: ", self.filename)
             self.objects = defaultValue
         }
     }

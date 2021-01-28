@@ -42,7 +42,7 @@ extension Tree: Codable where D: Codable, V: Codable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         if container.contains(.node) {
-            let nodeContainer = try decoder.container(keyedBy: CodingKeys.Node.self)
+            let nodeContainer = try container.nestedContainer(keyedBy: CodingKeys.Node.self, forKey: .node)
             self = .node(description: try nodeContainer.decode(D.self, forKey: .description),
                          children: try nodeContainer.decode([Tree<D, V>].self, forKey: .children))
         } else if container.contains(.leaf) {
